@@ -1,17 +1,18 @@
-name: push-to-acr
+name: Docker Image CI for GHCR
 
 on:
-  push
-jobs:
+   push:
+    branches: [ maven ]
+env:
+
+  TAG: ${{ github.run_number }}
+jobs: 
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Generate version number
-        id: version
-        run: echo "::set-output name=version::${{ github.run_number }}"
-      - name: Build and push the Image
+      - name: Build and push the image
         run: |
-          docker login --username ExamenDocker --password ${{ secrets.REGISTRY_PASSWORD }} examendocker.azurecr.io
-          docker build . --tag examendocker.azurecr.io/petclinicacr:${{ steps.version.outputs.version }}
-          docker push examendocker.azurecr.io/petclinicacr:${{ steps.version.outputs.version }}
+          docker login --username Jeronimo1520 --password ${{secrets.GH_PAT}} ghcr.io
+          docker build . -t ghcr.io/jeronimo1520/petclinic-ghcr:v${{ github.run_number }}
+          docker push ghcr.io/jeronimo1520/petclinic-ghcr:v${{ github.run_number }}
