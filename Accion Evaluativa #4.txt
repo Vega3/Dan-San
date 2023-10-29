@@ -1,0 +1,71 @@
+SANTIAGO TUBERQUIA CORREA - DANIEL MORALES TORO ------ Gestion de la configuracion ------ Evento evaluativo #4
+
+
+- ¿Que recursos web de azure utilizarian para llevar a produccion esa aplicacion? (Enumere todos lso recursos que consideran necesarios la idea es atender personas que se encuentran en Alemania. 10.000 Usuarios concurrentes. La aplicacion debe estar disponible 24n horas de lunes a domingo toso los dias del año)
+
+R//=
+El diseño y el costo de llevar una aplicación a producción en Azure dependen de varios factores, como la arquitectura de la aplicación, la cantidad de usuarios concurrentes, la carga de trabajo y otros requisitos específicos del proyecto. Dicho esto, puedo proporcionarte una estimación general de los recursos que podrían ser necesarios y algunos de los costos asociados. Ten en cuenta que estos son solo números aproximados y los costos reales pueden variar.
+
+Recursos necesarios para una aplicación que atiende a 10,000 usuarios concurrentes en Alemania, disponible las 24 horas los 7 días de la semana, los 365 días del año:
+
+1. Azure App Service: Puedes utilizar Azure App Service para hospedar tu aplicación web. Selecciona el plan de App Service que se adapte a tus necesidades en términos de escalabilidad y rendimiento. Puedes optar por varios niveles, como Free, Shared, Basic, Standard, Premium, etc.
+
+2. Azure SQL Database: Para almacenar datos y gestionar la base de datos de tu aplicación. El tipo de base de datos y el nivel de rendimiento dependerán de la carga de trabajo y la cantidad de datos que manejes.
+
+3. Azure CDN (Content Delivery Network): Para acelerar la entrega de contenido estático y mejorar la velocidad de carga de tu aplicación.
+
+4. Azure Traffic Manager: Para distribuir el tráfico de manera eficiente entre varias instancias de tu aplicación en diferentes regiones de Azure (disponibilidad geográfica) para garantizar la alta disponibilidad.
+
+5. Azure Blob Storage: Para almacenar datos y archivos estáticos, como imágenes, videos, y otros recursos multimedia.
+
+6. Azure Monitor y Azure Application Insights: Para supervisar y solucionar problemas de tu aplicación y obtener información sobre su rendimiento y uso.
+
+7. Azure Security Center: Para garantizar la seguridad de tu aplicación y protegerla contra amenazas cibernéticas.
+
+8. Azure Key Vault: Para gestionar de forma segura las claves y secretos de tu aplicación.
+
+9. Azure Virtual Network: Para configurar una red segura para tus recursos y garantizar una comunicación segura.
+
+
+- Cuanto seria el presupuesto mensual de los recursos a necesitar?
+
+R//=
+Azure App Service:
+
+  -Plan de Servicio: Azure App Service Premium (P1V3)
+  -Costo Mensual Estimado: Aproximadamente $400 - $600 por mes
+
+Azure SQL Database:
+
+  -Base de Datos: Azure SQL Database (Basic Tier)
+  -Costo Mensual Estimado: Aproximadamente $200 - $300 por mes
+
+Azure CDN:
+
+  -Uso de Azure CDN para la entrega de contenido estático
+  -Costo Mensual Estimado: Dependiendo del tráfico, estimado en $50 - $100 por mes
+
+Azure Traffic Manager:
+
+  -Costo Mensual Estimado: Bajo, generalmente menos de $20 por mes
+
+Azure Blob Storage:
+
+  -Costo Mensual Estimado: Variable según la cantidad de datos almacenados y transferencia de datos, estimado en $50 - $100 por mes
+
+Azure Monitor y Application Insights:
+
+  -Costo Mensual Estimado: Variable según el volumen de datos y la retención, estimado en $20 - $50 por mes
+
+Azure Security Center:
+
+  -Costo Mensual Estimado: Variable según las configuraciones de seguridad, estimado en $20 - $50 por mes
+
+Azure Key Vault:
+
+  -Costo Mensual Estimado: Bajo, generalmente menos de $20 por mes
+
+Azure Virtual Network:
+
+  -Costo Mensual Estimado: Variable según las configuraciones y uso, estimado en $50 - $100 por mes
+
